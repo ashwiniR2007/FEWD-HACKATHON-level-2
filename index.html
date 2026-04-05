@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FEWD Hackathon – Level 2 | Activity Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="badge">Oracle University · AdroIT Technologies</div>
+    <h1>FEWD Hackathon — Level 2</h1>
+    <p>Interactivity Implementation · Activity Tracker</p>
+  </div>
+
+  <!-- META CARD -->
+  <div class="meta-card">
+    <h2>📋 Student Details</h2>
+    <div class="meta-grid">
+      <div class="meta-item"><label>Student Name</label><span class="filled">— Enter Name —</span></div>
+      <div class="meta-item"><label>Year</label><span class="filled">2nd Year</span></div>
+      <div class="meta-item"><label>College Code</label><span class="filled">— Code —</span></div>
+      <div class="meta-item"><label>College Name</label><span class="filled">— College —</span></div>
+      <div class="meta-item"><label>Department</label><span class="filled">CSE / IT</span></div>
+      <div class="meta-item"><label>Semester</label><span class="filled">IV</span></div>
+      <div class="meta-item"><label>Roll No</label><span class="filled">— Roll —</span></div>
+      <div class="meta-item"><label>NMID</label><span class="filled">— ID —</span></div>
+      <div class="meta-item"><label>Date</label><span class="filled" id="today-date"></span></div>
+      <div class="meta-item"><label>Title</label><span class="filled">Interactive Activity Tracker</span></div>
+      <div class="meta-item" style="grid-column: 1/-1">
+        <label>GitHub Link</label>
+        <span class="filled">https://github.com/username/activity-tracker</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="progress-section">
+    <div class="progress-header">
+      <span class="progress-label">⚡ Live Progress</span>
+      <span class="progress-count">
+        <span id="done-count">0</span> / <span id="total-count">7</span> Completed
+      </span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+    <div class="progress-msg" id="progress-msg">Click any activity to mark it as completed.</div>
+  </div>
+
+  <!-- ACTIVITIES -->
+  <div class="activities-section">
+    <div class="section-title">🎯 Activities — Click to Toggle</div>
+    <div class="activity-list" id="activity-list"></div>
+  </div>
+
+  <!-- TEMPLATE CONTENT -->
+  <div class="template-section">
+    <div class="template-title">📄 Submission Template Content</div>
+    <div class="template-blocks" id="template-blocks"></div>
+  </div>
+
+  <div class="footer">
+    FEWD HACKATHON · LEVEL-2 · INTERACTIVITY IMPLEMENTATION
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
